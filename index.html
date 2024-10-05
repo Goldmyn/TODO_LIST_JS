@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-center text-3xl font-bold tracking-wide my-14 text-red-500">
+      MY TASK APP
+    </h1>
+    <section class="container mx-auto">
+      <p id="task-error" class="hidden text-center"></p>
+
+      <form
+        action=""
+        id="task-form"
+        class="flex justify-center shadow-md max-w-[500px] mx-auto p-4 rounded-lg"
+      >
+        <input
+          type="text"
+          id="task-input"
+          class="w-[80%] border-2 border-gray-300 rounded-lg p-2 outline-none"
+          placeholder="Add Task"
+        />
+
+        <button
+          id="add-task-btn"
+          type="submit"
+          class="bg-red-600 text-white p-2 ml-2 rounded-lg shadow-2xl font-semibold"
+        >
+          <span class="animate-pulse">Add Task</span>
+        </button>
+      </form>
+      <!-- ALL TASKS LIST -->
+      <ul
+        id="task-list"
+        class="mt-8 max-w-[500px] mx-auto bg-gray-300 font-medium rounded-lg"
+      ></ul>
+    </section>
+
+    <script src="/index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
